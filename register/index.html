@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <section class="">
+        <div class="">
+            <div>
+                <img class="w-full absolute z-0 h-screen" src="../src/bg-img.png" alt="">
+            </div>
+            <div class="absolute top-16 left-1/2 -translate-x-1/2 bg-white lg:w-[1000px] px-14 pt-1 rounded-[50px] pb-20">
+                <h1 class="sr-only">Sabilulungan</h1>
+                <div class="mt-10">
+                    <img class="mb-10" src="/src/Diskominfosan.png" alt="">
+                </div>
+                <h5 class="text-3xl font-bold mb-10">Buat Akun Dulu, Yuk!</h5>
+                <div class="flex justify-between gap-14">
+                    <div class="w-1/2 ">
+                        <div class="flex flex-col group">
+                            <!-- FORM NAMA -->
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="text" name="name_input" id="name_input"
+                                    class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="name_input"
+                                    class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Nama</label>
+                            </div>
+
+                            <!-- FORM NIK -->
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="text" name="nik_input" id="nik_input"
+                                    class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="nik_input"
+                                    class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">NIK</label>
+                            </div>
+
+                            <!-- FORM PEKERJAAN -->
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="text" name="role_input" id="role_input"
+                                    class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="role_input"
+                                    class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Pekerjaan</label>
+                            </div>
+
+                            <!-- FORM PASSWORD -->
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="password" name="password_input" id="password_input"
+                                    class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="password_input"
+                                    class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Password</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-1/2">
+                        <!-- FORM EMAIL -->
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="email  " name="email_input" id="email_input"
+                                class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="email_input"
+                                class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Email</label>
+                        </div>
+
+                        <!-- FORM NO TELP -->
+                        <div class="relative z-0 w-full mb-6 group">
+                            <input type="text" name="telp_input" id="telp_input"
+                                class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                placeholder=" " required />
+                            <label for="telp_input"
+                                class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">No
+                                HP</label>
+                        </div>
+
+                        <!-- FORM ALAMAT -->
+                        <div class="relative z-0 w-full mb-6 group">
+                            <textarea type="text name=" alamat_input" id="alamat_input"
+                                class="block py-2.5 px-3 w-full h-[106px] rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                placeholder=" "></textarea>
+                            <label for="alamat_input"
+                                class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Alamat</label>
+                        </div>
+
+                        <!-- SUBMIT BUTTON -->
+                        <div class="flex flex-col justify-center mt-16">
+                            <button
+                                class="bg-[#00ABE7] text-white px-28 py-3 rounded-full border-2 border-transparent hover:bg-blue-700 focus:bg-white focus:border-2 focus:border-blue-500 focus:text-blue-500 duration-300">Sign Up</button>
+                            <div class="mx-auto mt-5">
+                                <span>Sudah punya akun ? <a class="text-[#00ABE7] focus:text-blue-700 font-medium"
+                                        href="/login/index.html">Masuk</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
