@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <section class="">
+        <div class="">
+            <div>
+                <img class="w-full absolute z-0 h-screen" src="../src/bg-img.png" alt="">
+            </div>
+            <div
+                class="absolute top-16 left-1/2 -translate-x-1/2 bg-white lg:w-[1000px] px-14 pt-1 rounded-[50px] pb-20">
+                <h1 class="sr-only">Sabilulungan</h1>
+                <div class="mt-10">
+                    <img class="mb-10" src="/src/Diskominfosan.png" alt="">
+                </div>
+                <h5 class="text-3xl font-bold mb-10">Rekening Untuk Penyaluran Dana</h5>
+                <form action="">
+                    <div class=" gap-14">
+                        <div class="w-full ">
+                            <div class="flex flex-row gap-12 justify-between group">
+                                <!-- FORM REKENING -->
+                                <div class="relative z-0 w-full mb-6 group">
+                                    <input type="text" name="norek_input" id="norek_input"
+                                        class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                        placeholder=" " required />
+                                    <label for="norek_input"
+                                        class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">No.
+                                        Rek</label>
+                                </div>
+
+                                <!-- FORM BANK -->
+                                <div class="relative z-0 w-full mb-6 group">
+                                    <input type="text" name="nik_input" id="nik_input"
+                                        class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                        placeholder=" " required />
+                                    <label for="nik_input"
+                                        class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Bank</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full mt-10">
+                            <div class="flex gap-20 items-center mb-10">
+                                <h5 class="text-3xl font-bold">Organisasi</h5>
+                                <div class="flex gap-3 items-center">
+                                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Lewati</span>
+                                    <label class="relative inline-flex items-center cursor-pointer">
+                                        <input type="checkbox" value="" class="sr-only peer">
+                                        <div
+                                            class="w-11 h-4 bg-gray-400 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute peer-checked:after:border-2 peer-checked:after:border-blue-600 after:-top-[2px] after:left-[1px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:border-blue-500 peer-checked:bg-blue-600">
+                                        </div>
+                                        
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-10">
+                                <div class="w-full">
+                                    <!-- FORM ORGANISASI -->
+                                    <div class="relative z-0 w-full mb-6 group">
+                                        <input type="email  " name="nama_organisasi_input" id="nama_organisasi_input"
+                                            class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                            placeholder=" " required />
+                                        <label for="nama_organisasi_input"
+                                            class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Email</label>
+                                    </div>
+        
+                                    <!-- FORM AKTA PENDIRIAN -->
+                                    <div class="relative z-0 w-full mb-6 group">
+                                        <input type="text" name="akta_endirian_input" id="akta_endirian_input"
+                                            class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                            placeholder=" " required />
+                                        <label for="akta_endirian_input"
+                                            class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">No
+                                            HP</label>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <!-- FORM NO LEGALITAS -->
+                                    <div class="relative z-0 w-full mb-6 group">
+                                        <input type="text" name="legalitas_input" id="legalitas_input"
+                                            class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                            placeholder=" ">
+                                        <label for="legalitas_input"
+                                            class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">No Legalitas</label>
+                                    </div>
+
+                                    <!-- FORM PENANGGUNG JAWAB -->
+                                    <div class="relative z-0 w-full mb-6 group">
+                                        <input type="text" name="pj_input" id="pj_input"
+                                            class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                            placeholder=" ">
+                                        <label for="pj_input"
+                                            class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Penanggung Jawab</label>
+                                    </div>
+                                    
+                                    <!-- SUBMIT BUTTON -->
+                                    <div class="flex justify-between mt-16">
+                                        <a href=""
+                                            class="bg-gray-700 text-white px-8 py-3 rounded-2xl border-2 border-transparent focus:bg-transparent focus:border-2 focus:border-gray-800 focus:text-gray-800 duration-300">Kembali
+                                            </a>
+                                        <button
+                                            class="bg-[#00ABE7] text-white px-28 py-3 rounded-2xl border-2 border-transparent hover:bg-blue-700 focus:bg-white focus:border-2 focus:border-blue-500 focus:text-blue-500 duration-300">Selesai
+                                            </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
