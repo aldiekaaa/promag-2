@@ -1,19 +1,42 @@
-const checkbox = document.getElementById('myCheckbox');
+let slideIndex = 0;
+        showSlides();
 
-checkbox.addEventListener('change', function () {
-    if (this.checked) {
-        checkbox.classList.add('rounded-full');
-    } else {
-        checkbox.classList.remove('rounded-full');
-    }
-});
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
 
-const text = document.getElementById('email, password');
+        // Navbar Scroll
+        window.onscroll = function () {
+            const header = document.querySelector('header');
+            const navbarScroll = header.offsetTop;
 
-checkbox.addEventListener('change', function () {
-    if (this.checked) {
-        text.classList.remove('placeholder:block');
-    } else {
-        text.classList.add('placeholder:hidden');
-    }
-});
+            if (window.pageYOffset > navbarScroll) {
+                header.classList.add('navbar-scroll');
+            } else {
+                header.classList.remove('navbar-scroll');
+            }
+        }
+
+        // JavaScript Hamburger
+        const hamburger = document.querySelector('#hamburger');
+        const navbar = document.querySelector('#navbar');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('hamburger-click');
+            navbar.classList.toggle('hidden');
+        });
