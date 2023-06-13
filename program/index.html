@@ -79,7 +79,7 @@
             .navbar-scroll {
                 @apply fixed z-50 bg-white bg-opacity-30 shadow-lg;
                 backdrop-filter: blur(5px);
-                
+
             }
 
             .hamburger-costum {
@@ -102,6 +102,7 @@
 </head>
 
 <body class="">
+
     <header class="w-full pt-2 scrol fixed top-0 left-0 flex items-center z-50 border-b-[1px] border-white">
         <div class="w-full container">
             <div class="w-full flex items-center relative">
@@ -158,118 +159,24 @@
         </div>
     </header>
 
-    <section>
-        <div class="slideshow-container relative w-full h-[600px] mt-28">
-            <div class="mySlides relative w-full fade">
-                <img class="object-cover h-[600px] w-full" src="/src/slider.png" style="width:100%">
-                <div class="absolute top-1/2 right-1/2 translate-x-1/2 text-center w-[600px] ">
-                    <h1 class="text-yellow-400 text-lg">Pemerintah Kab. Sukabumi</h1>
-                    <h5 class="text-white text-3xl font-bold">Bantuan Sosial Untuk Semua</h5>
-                    <p class="text-white">Kami berkomitmen untuk menyalurkan bantuan dengan tepat sasaran dan membantu
-                        meningkatkan kualitas hidup masyarakat. Dukung program penyaluran hibah kami dan berikan dampak
-                        positif bagi sesama.</p>
-                </div>
-
+    <!-- MAIN SECTION -->
+    <section class="h-[590px] bg-gray-200">
+        <div class="mt-28 pt-14 flex justify-between items-center">
+            <div class="bg-white rounded-e-[50px] w-[58%] shadow-xl px-14 py-14">
+                <h1 class="text-yellow-500 font-semibold">Diskominfosan Kab. Sukabumi</h1>
+                <h3 class="text-blue-500 text-3xl font-bold my-3">Ajukan Bansos Online untuk Mempercepat dan Memudahkan Proses Pengajuan</h3>
+                <p class="mb-16 text-gray-600">Memanfaatkan layanan pengajuan bansos secara online melalui website akan mempermudah proses pengajuan dan mempercepat akses ke bantuan sosial yang diperlukan.</p>
+                <a href="" class="mt-10 bg-blue-500 hover:bg-blue-800 duration-300 px-20 py-3 text-white rounded-2xl">Ajukan</a>
             </div>
-
-            <div class="mySlides w-full fade">
-                <img class="object-cover h-[600px] w-full" src="/src/slider2.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides w-full fade">
-                <img class="object-cover h-[600px] w-full" src="src/slider3.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides w-full fade">
-                <img class="object-cover h-[600px] w-full" src="src/slider3.jpg" style="width:100%">
-            </div>
-
-            <div class="absolute bottom-5 right-1/2 translate-x-1/2" style="text-align:center">
-                <span class="dot rounded-full"></span>
-                <span class="dot rounded-full"></span>
-                <span class="dot rounded-full"></span>
-                <span class="dot rounded-full"></span>
-            </div>
-        </div>
-        <br>
-    </section>
-
-    <section>
-        <div class="relative container mx-auto">
-            <div class="flex gap-20 items-center">
-                <div class="w-[400px]">
-                    <h3 class="mb-10 text-lg font-semibold">Penyaluran dana yang terbuka mewujudkan pembangunan Kabupaten Sukabumi bersama.
-                    </h3>
-                    <button class="bg-blue-500 hover:bg-blue-800 duration-300 px-12 py-3 text-white rounded-lg">Selengkapnya</button>
-                </div>
-                <div class="w-[500px]">
-                    <p class=" text-gray-500">
-                        Dukung kami dalam menyalurkan bantuan yang tepat sasaran dan memberikan manfaat yang berarti
-                        bagi mereka yang membutuhkan.
-                        <br><br>
-                        Bantuan yang akurat dan tepat sasaran dapat memberikan dampak positif yang signifikan bagi
-                        lingkungan sekitar dan meningkatkan kualitas hidup masyarakat.
-                    </p>
-                </div>
-                <div>
-                    <img class="w-[300px]" src="src/Document.png" alt="">
-                </div>
+            <div>
+                <img class="mr-10" src="/src/docs.png" alt="">
             </div>
         </div>
     </section>
 
     <section>
-        <div class="bg-[#002D3D] text-white h-[380px] py-16">
-            <div class="container mx-auto">
-                <h1 class="text-3xl mb-3 font-medium">
-                    Tahapan
-                </h1>
-                <p>Tahapan yang perlu dilakukan untuk para pengaju bantuan hibah.</p>
-                <div class="mt-20">
-                    <div class="w-[900px] relative mx-auto">
-                        <div class="h-[4px] bg-yellow-500 rounded-full w-[900px]"></div>
-                        <div class="absolute w-[900px] -top-[7px]">
-                            <ul class="flex justify-between text-center mx-10">
-                                <li class="flex flex-col w-[10px] items-center  text-center">
-                                    <div class="h-5 w-5 bg-white mb-7 rounded-full border-4 border-yellow-500"></div>
-                                    <h5 class="text-center text-sm">Proposal Permohonan</h5>
-                                </li>
-                                <li class="flex flex-col w-[10px] items-center  text-center">
-                                    <div class="h-5 w-5 bg-white mb-7 rounded-full border-4 border-yellow-500"></div>
-                                    <h5 class="text-center text-sm">Verifikasi Proposal</h5>
-                                </li>
-                                <li class="flex flex-col w-[10px] items-center  text-center">
-                                    <div class="h-5 w-5 bg-white mb-7 rounded-full border-4 border-yellow-500"></div>
-                                    <h5 class="text-center text-sm">Verifikasi Lokasi</h5>
-                                </li>
-                                <li class="flex flex-col w-[10px] items-center  text-center">
-                                    <div class="h-5 w-5 bg-white mb-7 rounded-full border-4 border-yellow-500"></div>
-                                    <h5 class="text-center text-sm">Bimbingan Teknis</h5>
-                                </li>
-                                <li class="flex flex-col w-[10px] items-center  text-center">
-                                    <div class="h-5 w-5 bg-white mb-7 rounded-full border-4 border-yellow-500"></div>
-                                    <h5 class="text-center text-sm">NPHD</h5>
-                                </li>
-                                <li class="flex flex-col w-[10px] items-center  text-center">
-                                    <div
-                                        class="h-5 w-5 bg-yellow-500 mb-7 w-500 rounded-full border-4 border-yellow-500">
-                                    </div>
-                                    <h5 class="text-center text-sm">Pendanaan</h5>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container mx-auto pt-16">
-            <h1 class="text-3xl font-semibold mb-10 text-center">
-                Daftar Hibah
-            </h1>
-            <div class="flex justify-between items-center">
+        <div class="container mx-auto mt-20">
+            <div class="flex justify-between">
                 <!-- KATEGORI BUTTON -->
                 <div>
                     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
@@ -299,6 +206,7 @@
                     </div>
 
                 </div>
+                <!-- SEARCH BAR -->
                 <div class="relative w-[240px]">
                     <input class="rounded-full h-10 w-[240px] border-2 border-gray-500" type="text" placeholder="Cari">
                     <i class="absolute right-6 top-1/2 -translate-y-1/2 fa-solid fa-magnifying-glass"></i>
@@ -632,12 +540,16 @@
                     </div>
                 </div>
             </div>
+            <!-- PAGINATION BUTTON -->
             <div class="flex justify-center mt-20">
-                <a class="bg-blue-500 hover:bg-blue-800 duration-300 py-3 px-12 rounded-full text-white" href="">Selengkapnya</a>
+                <a class="bg-blue-500 hover:bg-blue-800 duration-300 py-3 px-12 rounded-xl text-white" href="">Selanjutnya</a>
+            </div>
+            <!-- PAGINATION STAT -->
+            <div class="flex justify-center">
+                <span><span class="font-bold">1</span> dari 6 Halaman</span>
             </div>
         </div>
     </section>
-    <!-- FOOTER -->
 
     <footer class="bg-gray-800 mt-20">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -722,8 +634,8 @@
         </div>
     </footer>
 
-
     <script src="./app.js"></script>
+
 </body>
 
 </html>
