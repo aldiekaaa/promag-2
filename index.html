@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c748089771.js" crossorigin="anonymous"></script>
-    <link href="../dist/output.css" rel="stylesheet">
-    <script src="./dist/app.js"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="/dist/app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sabilulungan</title>
     <style>
@@ -112,7 +112,7 @@
     <!-- NAVIGATION BAR -->
     <header class="w-full pt-2 scrol fixed top-0 left-0 flex items-center z-50 border-b-[1px] border-white">
         <div class="w-full container">
-            <div class="w-full flex items-center relative">
+            <div class="w-full flex justify-between items-center relative">
                 <!-- Logo -->
                 <div class="w-[200px] pl-6 pr-10 py-4 mb-2 lg:w-[450px] lg:px-20">
                     <a href="#home" class="block">
@@ -122,7 +122,7 @@
 
                 <div class="lg:w-full flex items-center gap-2 px-2 mb-2">
                     <!-- Hamburger Navigasi -->
-                    <button id="hamburger" name="hamburger" type="button" class="block  right-4 lg:hidden">
+                    <button id="hamburger" name="hamburger" type="button" class="block lg:hidden">
                         <span class="hamburger-costum transition duration-300 ease-in-out origin-top-right"></span>
                         <span class="hamburger-costum transition duration-300 ease-in-out"></span>
                         <span class="hamburger-costum transition duration-300 ease-in-out origin-bottom-right"></span>
@@ -134,7 +134,7 @@
                         <ul class="block lg:flex gap-10 lg:justify-center">
                             <li class="group">
                                 <a href="#"
-                                    class="mx-4 flex py-3 text-xl text-gray-500 lg:font-semibold hover:text-blue-500 lg:text-base duration-300">Beranda</a>
+                                    class="mx-4 flex py-3 text-xl text-blue-500 lg:font-semibold hover:text-blue-500 lg:text-base duration-300">Beranda</a>
                             </li>
                             <li class="group">
                                 <a href="/program/index.html"
@@ -649,8 +649,8 @@
             </div>
         </div>
     </section>
-    <!-- FOOTER -->
 
+    <!-- FOOTER -->
     <footer class="bg-gray-800 mt-20">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
@@ -726,7 +726,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="./app.js"></script>
 </body>
