@@ -7,98 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c748089771.js" crossorigin="anonymous"></script>
     <link href="/dist/output.css" rel="stylesheet">
-    <script src="/dist/app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Sabilulungan</title>
-    <style>
-        /* The dots/bullets/indicators */
-        .dot {
-            height: 10px;
-            width: 10px;
-            margin: 0 2px;
-            background-color: #FFFFFF;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active {
-            background-color: #00ABE7;
-            width: 40px;
-            height: 10px;
-            border-radius: 40%;
-        }
-
-        /* Fading animation */
-        .fade {
-            animation-name: fadeIn;
-            animation-duration: 2s;
-        }
-
-        @keyframes fade {
-            from {
-                opacity: 0.2
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        .fadeIn {
-            -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-        }
-
-        @-webkit-keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-
-        }
-
-        @layer utilities {
-            .navbar-scroll {
-                @apply fixed z-50 bg-white bg-opacity-100 shadow-lg;
-                backdrop-filter: blur(3px);
-
-            }
-
-            .hamburger-costum {
-                @apply w-[30px] h-[2px] my-2 block bg-black;
-            }
-
-            .hamburger-click>span:nth-child(1) {
-                @apply -rotate-45;
-            }
-
-            .hamburger-click>span:nth-child(2) {
-                @apply scale-0;
-            }
-
-            .hamburger-click>span:nth-child(3) {
-                @apply rotate-45;
-            }
-        }
-    </style>
 </head>
 
 <body class="">
@@ -159,6 +69,7 @@
         </div>
     </header>
 
+    <!-- LAPORAN TAHUNAN -->
     <section class="bg-gray-200 h-[690px] mt-28">
         <div class="container mx-auto pt-10">
             <div class="bg-white rounded-[30px] mt-10 px-20 py-16">
@@ -170,7 +81,7 @@
                 <!-- CARD SLIDER -->
                 <div class="flex gap-10 overflow-x-auto scrollbar-hide w-full mt-10">
                     <!-- CARD -->
-                    <div class="border-4 border-sky-300 px-10 py-5 rounded-2xl">
+                    <div class="laporanCard border-4 border-sky-300 px-10 py-5 rounded-2xl">
                         <p class="text-orange-400">Tahun 2023</p>
                         <div class="flex">
                             <div class="w-[180px] font-semibold">
@@ -189,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="border-4 border-sky-300 px-10 py-5 rounded-2xl">
+                    <div class="laporanCard border-4 border-sky-300 px-10 py-5 rounded-2xl">
                         <p class="text-orange-400">Tahun 2023</p>
                         <div class="flex">
                             <div class="w-[180px] font-semibold">
@@ -208,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="border-4 border-sky-300 px-10 py-5 rounded-2xl">
+                    <div class="laporanCard border-4 border-sky-300 px-10 py-5 rounded-2xl">
                         <p class="text-orange-400">Tahun 2023</p>
                         <div class="flex">
                             <div class="w-[180px] font-semibold">
@@ -227,7 +138,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="border-4 border-sky-300 px-10 py-5 rounded-2xl">
+                    <div class="laporanCard border-4 border-sky-300 px-10 py-5 rounded-2xl">
                         <p class="text-orange-400">Tahun 2023</p>
                         <div class="flex">
                             <div class="w-[180px] font-semibold">
@@ -705,30 +616,7 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Navbar Scroll
-        window.onscroll = function () {
-            const header = document.querySelector('header');
-            const navbarScroll = header.offsetTop;
-
-            if (window.pageYOffset > navbarScroll) {
-                header.classList.add('navbar-scroll');
-            } else {
-                header.classList.remove('navbar-scroll');
-            }
-        }
-
-        // JavaScript Hamburger
-        const hamburger = document.querySelector('#hamburger');
-        const navbar = document.querySelector('#navbar');
-
-        hamburger.addEventListener('click', function () {
-            hamburger.classList.toggle('hamburger-click');
-            navbar.classList.toggle('hidden');
-        });
-    </script>
-
+    <script src="./app.js"></script>
 </body>
 
 </html>
