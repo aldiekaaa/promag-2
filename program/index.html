@@ -9,7 +9,7 @@
     <link href="/dist/output.css" rel="stylesheet">
     <script src="/dist/app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Sabilulungan</title>
+    <title>Program</title>
     <style>
         /* The dots/bullets/indicators */
         .dot {
@@ -138,7 +138,7 @@
                             </li>
                             <li class="group">
                                 <a href="/program/index.html"
-                                    class="mx-4 flex py-3 text-xl text-gray-500 lg:font-semibold hover:text-blue-500 lg:text-base duration-300">Program</a>
+                                    class="mx-4 flex py-3 text-xl lg:font-semibold text-blue-500 lg:text-base duration-300">Program</a>
                             </li>
                             <li class="group">
                                 <a href="/laporan/index.html"
@@ -189,29 +189,31 @@
         <div class="container mx-auto mt-20">
             <div class="flex justify-between">
                 <!-- KATEGORI BUTTON -->
-                <div>
+                <div class="relative group">
                     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                         class="text-gray-500 bg-transparent border-2 border-gray-500 focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
-                        type="button">Kategori <svg class="w-4 h-4 ml-10" aria-hidden="true" fill="none"
+                        type="button">Kategori <svg class="w-4 h-4 ml-16" aria-hidden="true" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
                             </path>
                         </svg></button>
                     <!-- Dropdown menu -->
-                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                    <div id="dropdown" class="z-10 absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 group-hover:block group-focus-within:block duration-500 fadeIn">
                         <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Operasional</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Pembangunan</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Earnings</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rehabilitasi Ringan</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign
-                                    out</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rehabilitasi Sedang</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rehabilitasi Berat</a>
                             </li>
                         </ul>
                     </div>

@@ -73,6 +73,44 @@
                 opacity: 1;
             }
 
+            100% {
+                opacity: 1;
+            }
+
+            0% {
+                opacity: 0;
+            }
+
+        }
+
+        .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes fadeOut {
+            100% {
+                opacity: 0;
+            }
+
+            0% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+            }
+
+            0% {
+                opacity: 1;
+            }
+
         }
 
         @layer utilities {
@@ -168,13 +206,13 @@
 
     <!-- MAIN SECTION -->
     <section>
-        <div class="slideshow-container relative w-full h-[600px] mt-28">
+        <div class="slideshow-container relative w-full h-[300px] lg:h-[600px] mt-28">
             <div class="mySlides relative w-full fade">
-                <img class="object-cover h-[600px] w-full" src="/src/slider.png" style="width:100%">
-                <div class="absolute top-1/2 right-1/2 translate-x-1/2 text-center w-[600px] ">
-                    <h1 class="text-yellow-400 text-lg">Pemerintah Kab. Sukabumi</h1>
-                    <h5 class="text-white text-3xl font-bold">Bantuan Sosial Untuk Semua</h5>
-                    <p class="text-white">Kami berkomitmen untuk menyalurkan bantuan dengan tepat sasaran dan membantu
+                <img class="object-cover h-[300px] lg:h-[600px] brightness-50 w-full" src="/src/slider.png" style="width:100%">
+                <div class="absolute top-1/4 lg:top-1/2 right-1/2 translate-x-1/2 text-center w-[300px] lg:w-[600px] ">
+                    <h1 class="text-yellow-400 lg:text-lg text-base">Pemerintah Kab. Sukabumi</h1>
+                    <h5 class="text-white text-xl lg:text-3xl font-bold">Bantuan Sosial Untuk Semua</h5>
+                    <p class="text-white text-xs md:text-base">Kami berkomitmen untuk menyalurkan bantuan dengan tepat sasaran dan membantu
                         meningkatkan kualitas hidup masyarakat. Dukung program penyaluran hibah kami dan berikan dampak
                         positif bagi sesama.</p>
                 </div>
@@ -182,15 +220,15 @@
             </div>
 
             <div class="mySlides w-full fade">
-                <img class="object-cover h-[600px] w-full" src="/src/slider2.jpg" style="width:100%">
+                <img class="object-cover h-[300px] lg:h-[600px] w-full" src="/src/slider2.jpg" style="width:100%">
             </div>
 
             <div class="mySlides w-full fade">
-                <img class="object-cover h-[600px] w-full" src="src/slider3.jpg" style="width:100%">
+                <img class="object-cover h-[300px] lg:h-[600px] w-full" src="src/slider3.jpg" style="width:100%">
             </div>
 
             <div class="mySlides w-full fade">
-                <img class="object-cover h-[600px] w-full" src="src/slider3.jpg" style="width:100%">
+                <img class="object-cover h-[300px] lg:h-[600px] w-full" src="src/slider3.jpg" style="width:100%">
             </div>
 
             <div class="absolute bottom-5 right-1/2 translate-x-1/2" style="text-align:center">
@@ -206,14 +244,16 @@
     <!-- CALL TO ACTION -->
     <section>
         <div class="relative container mx-auto">
-            <div class="flex gap-20 items-center">
-                <div class="w-[400px]">
-                    <h3 class="mb-10 text-lg font-semibold">Penyaluran dana yang terbuka mewujudkan pembangunan Kabupaten Sukabumi bersama.
+            <div class="md:flex flex-col md:flex-row gap-20 items-center">
+                <div class="md:w-[300px] lg:w-[400px]">
+                    <h3 class="mb-10 text-lg font-semibold text-center md:text-start">Penyaluran dana yang terbuka mewujudkan pembangunan Kabupaten Sukabumi bersama.
                     </h3>
-                    <button class="bg-blue-500 hover:bg-blue-800 duration-300 px-12 py-3 text-white rounded-lg">Selengkapnya</button>
+                    <div class="hidden lg:block">
+                        <button class="bg-blue-500 hover:bg-blue-800 duration-300 px-12 py-3 text-white rounded-lg">Selengkapnya</button>
+                    </div>
                 </div>
-                <div class="w-[500px]">
-                    <p class=" text-gray-500">
+                <div class="flex justify-center md:block lg:w-[500px]">
+                    <p class=" text-gray-500 text-sm text-center md:text-start md:text-base">
                         Dukung kami dalam menyalurkan bantuan yang tepat sasaran dan memberikan manfaat yang berarti
                         bagi mereka yang membutuhkan.
                         <br><br>
@@ -221,7 +261,10 @@
                         lingkungan sekitar dan meningkatkan kualitas hidup masyarakat.
                     </p>
                 </div>
-                <div>
+                <div class="lg:hidden flex justify-center my-10">
+                    <button class="bg-blue-500 hover:bg-blue-800 duration-300 px-12 py-3 text-white rounded-lg">Selengkapnya</button>
+                </div>
+                <div class="md:block hidden">
                     <img class="w-[300px]" src="src/Document.png" alt="">
                 </div>
             </div>
@@ -283,7 +326,7 @@
             </h1>
             <div class="flex justify-between items-center">
                 <!-- KATEGORI BUTTON -->
-                <div>
+                <div class="relative group">
                     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                         class="text-gray-500 bg-transparent border-2 border-gray-500 focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
                         type="button">Kategori <svg class="w-4 h-4 ml-16" aria-hidden="true" fill="none"
@@ -292,20 +335,22 @@
                             </path>
                         </svg></button>
                     <!-- Dropdown menu -->
-                    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                    <div id="dropdown" class="z-10 absolute hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 group-hover:block group-focus-within:block duration-500 fadeIn">
                         <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Operasional</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Settings</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Pembangunan</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Earnings</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rehabilitasi Ringan</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign
-                                    out</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rehabilitasi Sedang</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Rehabilitasi Berat</a>
                             </li>
                         </ul>
                     </div>
@@ -317,7 +362,7 @@
                 </div>
             </div>
             <!-- DAFTAR HIBAH LIST -->
-            <div class="grid grid-cols-3 gap-20 grid-rows-3 mt-20 w-full">
+            <div class="grid lg:grid-cols-3 lg:grid-rows-3 md:grid-cols-2 md:grid-rows-2 gap-20 mt-20 w-full">
                 <!-- GRID -->
                 <div class="w-[400px]">
                     <div class="flex gap-7">
