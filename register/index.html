@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c748089771.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Daftar</title>
 </head>
@@ -59,13 +60,23 @@
                                     placeholder=" " required />
                                 <label for="password_input"
                                     class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Password</label>
+                                    <span
+                                        class="absolute z-20 top-1/2 -translate-y-1/2 right-2 py-2 px-2 text-gray-600 password-toggle"
+                                        onclick="togglePasswordVisibility()">
+                                        <i class="fa-sharp fa-regular fa-eye-slash"></i>
+                                    </span>
                             </div>
                             <div class="relative z-0 w-full mb-6 group">
-                                <input type="password" name="password_input" id="password_input"
+                                <input type="password" name="password_repeat_input" id="password_repeat_input"
                                     class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
                                     placeholder=" " required />
-                                <label for="password_input"
-                                    class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Ulangi Password</label>
+                                <label for="password_repeat_input"
+                                    class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Konfirmasi Password</label>
+                                    <span
+                                        class="absolute z-20 top-1/2 -translate-y-1/2 right-2 py-2 px-2 text-gray-600 password-repeat-toggle"
+                                        onclick="togglePasswordRepeatVisibility()">
+                                        <i class="fa-sharp fa-regular fa-eye-slash"></i>
+                                    </span>
                             </div>
                         </div>
                     </div>

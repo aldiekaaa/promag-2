@@ -21,10 +21,11 @@
                 <div>
                     <div class="bg-white lg:w-[450px] rounded-3xl px-14 py-9">
                         <h1 class="sr-only">Sabilulungan</h1>
-                        <img class="mx-auto my-5 w-[150px]" src="/src/Sabilulungan.png" alt="">
-                        <h5 class="text-2xl font-bold mb-5">Selamat Datang</h5>
-                        <div class="flex flex-col group">
-                            <form onsubmit="validateAccount(event)">
+                        <img class="mx-auto my-5 mb-10 w-[150px]" src="/src/Sabilulungan.png" alt="">
+                        <form class="relative" onsubmit="validateAccount(event)">
+                            <p class="absolute w-[70%] text-center -top-10 left-1/2 -translate-x-1/2 password-alert rounded-lg"></p>
+                            <h5 class="text-2xl font-bold mb-5">Selamat Datang</h5>
+                            <div class="flex flex-col group">
                                 <div class="relative z-0 w-full mb-7 group">
                                     <input type="email" name="email_input" id="email_input"
                                         class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
@@ -42,7 +43,6 @@
                                         onclick="togglePasswordVisibility()">
                                         <i class="fa-sharp fa-regular fa-eye-slash"></i>
                                     </span>
-                                    <p class="absolute password-alert mb-10"></p>
                                     <label for="password_input"
                                         class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Password
                                     </label>
@@ -61,12 +61,13 @@
                                     <button
                                         class="bg-[#00ABE7] text-white px-28 py-3 rounded-full border-2 border-transparent hover:bg-blue-700 focus:bg-white focus:border-2 focus:border-blue-500 focus:text-blue-500 duration-300">Sign
                                         In</button>
-                            </form>
-                            <div class="mx-auto mt-5">
-                                <span>Belum punya akun ? <a class="text-[#00ABE7] focus:text-blue-700 font-medium"
-                                        href="/register/index.html">Buat Akun</a></span>
-                            </div>
-                        </div>
+                                    <div class="mx-auto mt-5">
+                                        <span>Belum punya akun ? <a
+                                                class="text-[#00ABE7] focus:text-blue-700 font-medium"
+                                                href="/register/index.html">Buat Akun</a></span>
+                                    </div>
+                                </div>
+                        </form>
                         <div class="mx-auto mt-10">
                             <img src="/src/Diskominfosan.png" alt="">
                         </div>

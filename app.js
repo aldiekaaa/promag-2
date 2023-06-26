@@ -55,6 +55,19 @@ function togglePasswordVisibility() {
     }
 }
 
+function togglePasswordRepeatVisibility() {
+    var passwordRepeatInput = document.getElementById("password_repeat_input");
+    var passwordRepeatToggle = document.querySelector(".password-repeat-toggle");
+
+    if (passwordRepeatInput.type === "password") {
+        passwordRepeatInput.type = "text";
+        passwordRepeatToggle.innerHTML = '<i class="fa-sharp fa-regular fa-eye text-blue-500"></i>';
+    } else {
+        passwordRepeatInput.type = "password";
+        passwordRepeatToggle.innerHTML = '<i class="fa-sharp fa-regular fa-eye-slash"></i>';
+    }
+}
+
 // function validatePassword(event) {
 //     event.preventDefault();
 
@@ -98,14 +111,14 @@ function validateAccount(event) {
 
 
     if (emailValue == 'aldi@gmail.com') {
-        if (passValue == 'password123') {
-            alert('Berhasil Register');
+        if (passValue == 'password123') {  
+            window.location.href = "/index.html"
         } else {
             password.classList.add('border-red-500')
-            passwordAlert.innerHTML = '<p class="text-red-500 text-xs mt-1 ml-3">Password Salah</p>';
+            passwordAlert.innerHTML = '<p class="text-red-600 mt-1 ml-3 bg-red-200 px-5 py-1 rounded-lg">Password Salah</p>';
         }
     } else {
         email.classList.add('border-red-500')
-        passwordAlert.innerHTML = '<p class="text-red-500 text-xs mt-1 ml-3">Email atau Password Salah</p>';
+        passwordAlert.innerHTML = '<p class="text-red-600 mt-1 ml-3 bg-red-200 px-5 py-1 rounded-lg">Email atau Password Salah</p>';
     }
 }
