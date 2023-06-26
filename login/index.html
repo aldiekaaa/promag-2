@@ -37,59 +37,43 @@
                                 <input type="password" name="password" id="password"
                                     class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
                                     placeholder=" " required />
+                                <span
+                                    class="absolute z-20 top-1/2 -translate-y-1/2 right-2 py-2 px-2 text-gray-600 password-toggle"
+                                    onclick="togglePasswordVisibility()">
+                                    <i class="fa-sharp fa-regular fa-eye-slash"></i>
+                                </span>
                                 <label for="password"
                                     class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Password</label>
-                                <!-- <span id="passwordError" class="error"></span> -->
                             </div>
 
                             <div class="flex justify-between items-center mb-10">
-                                <div>
+                                <div class="relative">
                                     <input type="checkbox" id="myCheckbox"
-                                        class="form-checkbox text-red-800 transition duration-150 ease-in-out ring-0 ">
+                                        class="form-checkbox text-red-800 transition duration-150 ease-in-out ring-0">
                                     <label class="ml-2" for="myCheckbox">Remember Me</label>
                                 </div>
-                                <div class="relative z-0 mb-7 w-full group">
-                                    <input type="password" name="password_input" id="password_input"
-                                        class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
-                                        placeholder=" " required />
-                                    <span
-                                        class="absolute z-20 top-1/2 -translate-y-1/2 right-2 py-2 px-2 text-gray-600 password-toggle"
-                                        onclick="togglePasswordVisibility()">
-                                        <i class="fa-sharp fa-regular fa-eye-slash"></i>
-                                    </span>
-                                    <label for="password_input"
-                                        class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Password
-                                    </label>
+                                <div>
+                                    <a class="text-red-400" href="">Lupa Password ?</a>
                                 </div>
-                                <div class="flex justify-between items-center mb-10">
-                                    <div class="relative">
-                                        <input type="checkbox" id="myCheckbox"
-                                            class="form-checkbox text-red-800 transition duration-150 ease-in-out ring-0">
-                                        <label class="ml-2" for="myCheckbox">Remember Me</label>
-                                    </div>
-                                    <div>
-                                        <a class="text-red-400" href="">Lupa Password ?</a>
-                                    </div>
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <button
+                                    class="bg-[#00ABE7] text-white px-28 py-3 rounded-full border-2 border-transparent hover:bg-blue-700 focus:bg-white focus:border-2 focus:border-blue-500 focus:text-blue-500 duration-300">Sign
+                                    In</button>
+                                <div class="mx-auto mt-5">
+                                    <span>Belum punya akun ? <a class="text-[#00ABE7] focus:text-blue-700 font-medium"
+                                            href="/register/index.html">Buat Akun</a></span>
                                 </div>
-                                <div class="flex flex-col justify-center">
-                                    <button
-                                        class="bg-[#00ABE7] text-white px-28 py-3 rounded-full border-2 border-transparent hover:bg-blue-700 focus:bg-white focus:border-2 focus:border-blue-500 focus:text-blue-500 duration-300">Sign
-                                        In</button>
-                                    <div class="mx-auto mt-5">
-                                        <span>Belum punya akun ? <a
-                                                class="text-[#00ABE7] focus:text-blue-700 font-medium"
-                                                href="/register/index.html">Buat Akun</a></span>
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
                 <div class="mx-auto mt-10">
                     <img src="/src/Diskominfosan.png" alt="">
                 </div>
             </div>
-            </form>
         </div>
-        </div>
-        </div>
+
     </section>
 
     <script src="/api/apiLogin.js"></script>

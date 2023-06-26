@@ -43,7 +43,7 @@ hamburger.addEventListener('click', function () {
 
 // PASSWORD VISIBILITY
 function togglePasswordVisibility() {
-    var passwordInput = document.getElementById("password_input");
+    var passwordInput = document.getElementById("password");
     var passwordToggle = document.querySelector(".password-toggle");
 
     if (passwordInput.type === "password") {
@@ -56,7 +56,7 @@ function togglePasswordVisibility() {
 }
 
 function togglePasswordRepeatVisibility() {
-    var passwordRepeatInput = document.getElementById("password_repeat_input");
+    var passwordRepeatInput = document.getElementById("ulangPassword");
     var passwordRepeatToggle = document.querySelector(".password-repeat-toggle");
 
     if (passwordRepeatInput.type === "password") {
