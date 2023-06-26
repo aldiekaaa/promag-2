@@ -17,22 +17,36 @@
             <div>
                 <img class="w-full absolute z-0 h-screen" src="../src/bg-img.png" alt="">
             </div>
-            <div class="absolute top-1/2 -translate-y-1/2 right-[80px]">
-                <div>
+
+            <div class="absolute top-[80px] right-[80px]">
+                <form id="login-form" onsubmit="validateForm(event)">
                     <div class="bg-white lg:w-[450px] rounded-3xl px-14 py-9">
                         <h1 class="sr-only">Sabilulungan</h1>
-                        <img class="mx-auto my-5 mb-10 w-[150px]" src="/src/Sabilulungan.png" alt="">
-                        <form class="relative" onsubmit="validateAccount(event)">
-                            <p class="absolute w-[70%] text-center -top-10 left-1/2 -translate-x-1/2 password-alert rounded-lg"></p>
-                            <h5 class="text-2xl font-bold mb-5">Selamat Datang</h5>
-                            <div class="flex flex-col group">
-                                <div class="relative z-0 w-full mb-7 group">
-                                    <input type="email" name="email_input" id="email_input"
-                                        class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
-                                        placeholder=" " required />
-                                    <p class="absolute email-alert mb-10"></p>
-                                    <label for="email_input"
-                                        class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Email</label>
+                        <img class="mx-auto my-10 w-[150px]" src="/src/Sabilulungan.png" alt="">
+                        <h5 class="text-3xl font-bold mb-10">Selamat Datang</h5>
+                        <div class="flex flex-col group">
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="email" name="email" id="email"
+                                    class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="email"
+                                    class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Email</label>
+                            </div>
+
+                            <div class="relative z-0 w-full mb-6 group">
+                                <input type="password" name="password" id="password"
+                                    class="block py-2.5 px-3 w-full rounded-xl text-sm text-gray-900 bg-transparent border-2 border-gray-300 appearance-none focus:outline-none focus:ring-1 focus:border-blue-600 peer"
+                                    placeholder=" " required />
+                                <label for="password"
+                                    class="absolute text-sm bg-white px-2 text-gray-500 duration-300 transform -translate-y-5 scale-75 top-3 left-4 z-10 origin-[0] peer-focus:scale-75 peer-placeholder-shown:scale-110 peer-focus:left-4 peer-focus:text-blue-600 peer-placeholder-shown:translate-y-0  peer-focus:-translate-y-5">Password</label>
+                                <!-- <span id="passwordError" class="error"></span> -->
+                            </div>
+
+                            <div class="flex justify-between items-center mb-10">
+                                <div>
+                                    <input type="checkbox" id="myCheckbox"
+                                        class="form-checkbox text-red-800 transition duration-150 ease-in-out ring-0 ">
+                                    <label class="ml-2" for="myCheckbox">Remember Me</label>
                                 </div>
                                 <div class="relative z-0 mb-7 w-full group">
                                     <input type="password" name="password_input" id="password_input"
@@ -67,17 +81,18 @@
                                                 href="/register/index.html">Buat Akun</a></span>
                                     </div>
                                 </div>
-                        </form>
-                        <div class="mx-auto mt-10">
-                            <img src="/src/Diskominfosan.png" alt="">
-                        </div>
-                    </div>
+                </form>
+                <div class="mx-auto mt-10">
+                    <img src="/src/Diskominfosan.png" alt="">
                 </div>
             </div>
+            </form>
+        </div>
         </div>
         </div>
     </section>
 
+    <script src="/api/apiLogin.js"></script>
     <script src="/app.js"></script>
 </body>
 
